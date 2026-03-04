@@ -152,11 +152,11 @@ nav ul li a {
 
 .rowitems {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+  grid-template-columns: repeat(auto-fit, minmax(120px,1fr));
   gap: 85px;
   align-items: center;
   text-align: center;
-  margin: auto;
+  margin: 20px;
   margin-top: 25px;
   max-width: 1100px;
   padding: 20px;
@@ -237,6 +237,7 @@ nav ul li a {
   flex-wrap: wrap;
   margin-bottom: 1px;
   gap: 15px;
+  justify-content: center;
 }
 
 .package2-content {
@@ -711,38 +712,43 @@ form textarea {
   background-color: transparent;
 }
 
-/* MOBILE RESPONSIVE */
+@media screen and (max-width: 768px){
 
-@media (max-width: 768px) {
-
-  nav {
+nav{
     flex-direction: column;
     align-items: center;
-  }
+}
 
-  .navbar {
-    margin: 10px;
-  }
+.navbar{
+    margin: 10px 0;
+}
 
-  .rowitems {
-    grid-template-columns: 1fr;
-    margin: 10px;
-  }
+nav ul li{
+    display: block;
+    margin: 10px 0;
+}
 
-  .package-content,
-  .package2-content,
-  .pack5-content {
-    flex-direction: column;
-    margin: 10px;
-  }
+}
+@media screen and (max-width:768px){
 
-  .location-content {
-    flex-direction: column;
-    align-items: center;
-  }
+.title h1{
+font-size:40px;
+}
 
-  .title h1 {
-    font-size: 40px;
-  }
+.package-content,
+.package2-content,
+.pack5-content{
+flex-direction:column;
+margin:10px;
+}
+
+.container-box{
+width:100%;
+}
+
+.newsletter{
+flex-direction:column;
+text-align:center;
+}
 
 }
