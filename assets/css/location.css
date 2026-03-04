@@ -38,8 +38,8 @@
 
 .location-img img {
     box-shadow: 5px 5px 10px #3b3737;
-    height: 400px;
-    width: 350px;
+    height: auto;
+    width: 100%;
     margin-top: 30px;
     margin-bottom: 10px;
     border-radius: 15px;

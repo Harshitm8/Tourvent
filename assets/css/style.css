@@ -156,9 +156,10 @@ nav ul li a {
   gap: 85px;
   align-items: center;
   text-align: center;
+  margin: auto;
   margin-top: 25px;
-  margin-left: 350px;
-  margin-right: 350px;
+  max-width: 1100px;
+  padding: 20px;
   margin-bottom: 1px;
   gap: 2px;
 }
@@ -232,8 +233,8 @@ nav ul li a {
   background: linear-gradient(#445056, #47addd 45%, #fff 45%, #fff 100%);
   box-shadow: 10px 10px 15px #3b3737;
   margin-top: 5px;
-  margin-left: 149px;
-  margin-right: 149px;
+  margin: 20px;
+  flex-wrap: wrap;
   margin-bottom: 1px;
   gap: 15px;
 }
@@ -673,7 +674,8 @@ color: black;
   color: black;
   background-color: white;
   box-shadow: 5px 5px 10px #3b3737;
-  margin-right: 40%;
+  margin: auto;
+  max-width: 500px;
 }
 
 .contact-form form input,
@@ -707,4 +709,40 @@ form textarea {
   color: #191919;
   font-weight: 600px;
   background-color: transparent;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 768px) {
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    margin: 10px;
+  }
+
+  .rowitems {
+    grid-template-columns: 1fr;
+    margin: 10px;
+  }
+
+  .package-content,
+  .package2-content,
+  .pack5-content {
+    flex-direction: column;
+    margin: 10px;
+  }
+
+  .location-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title h1 {
+    font-size: 40px;
+  }
+
 }
